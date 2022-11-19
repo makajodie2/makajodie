@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+
+/* navbar */
+.navbar-nav{
+    font-size: 20px;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.fix-pos {
+    position: fixed;
+}
+/* text home */
+.text-warning::after{
+    content: '';
+    color: orange;
+    font-weight: bold;
+    font-size: 40px;
+    animation: changetext 20s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Web Developer";}
+    10%{content: "Developer";}
+    20%{content: "Graphic Designer";}
+    30%{content: "Mobile App Developer";}
+    40%{content: "Android App Developer";}
+    50%{content: "Php Web Developer";}
+    60%{content: "Youtuber";}
+    70%{content: "Bootstrap Developer";}
+    80%{content: "iOS App Developer";}
+    100%{content: "Full Stack Developer";}
+}
+/* Button */
+.btn:hover{
+    color: white;
+}
+
+
+
+
+/* Progress bar */
+.progress{
+    height: 50px;
+    border-radius: 50px;
+    transition: all 0.5s ease; 
+}
+.progress:hover{
+    transform: scale(1.1);
+}
+/* Card bar */
+.card{
+    transition: all 0.5s ease;
+}
+.card img{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 2px 10px black;
+}
+/* Contact---icon section */
+.iconSection{
+    display: flex;
+}
+.icon-text{
+    color: black;
+}
+.sm-title{
+    color: black;
+    font-size: 30px;
+    
+}
+.c-text{
+    color: black;
+    font-size: 30px;
+}
+.c-text span{
+    color: orange;
+    font-size: 30px;
+}
+/* Footer bar */
+.footer{
+    height: 50px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 43%;
+}
+.footer a span{
+    color: orange;
+}
